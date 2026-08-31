@@ -68,7 +68,7 @@ const NetworkConfigStruct = object({
 });
 
 /**
- * A struct to validate and coerce the selected network from env.
+ * A struct to validate and coserce the selected network from env.
  * Converts the selected network to lowercase and checks if it is a valid selected network.
  * If the selected network is empty, it returns the default selected network.
  */
