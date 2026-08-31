@@ -61,7 +61,7 @@ const parseFloatStruct = (
 /**
  * A struct for validating the network config.
  */
-const networkConfigStruct = object({
+const NetworkConfigStruct = object({
   rpcUrl: UrlStruct,
   horizonUrl: UrlStruct,
   explorerBaseUrl: UrlStruct,
@@ -94,7 +94,7 @@ export const LogLevelStruct = coerce(
  */
 const networkConfigMapStruct = record(
   KnownCaip2ChainIdStruct,
-  networkConfigStruct,
+  NetworkConfigStruct,
 );
 
 /**
@@ -183,7 +183,7 @@ export type Config = Infer<typeof ConfigStruct>;
 /**
  * The network config type.
  */
-export type NetworkConfig = Infer<typeof networkConfigStruct>;
+export type NetworkConfig = Infer<typeof NetworkConfigStruct>;
 
 /**
  * The app config.
