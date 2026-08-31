@@ -120,9 +120,9 @@ export class ConfigProvider {
       ENVIRONMENT: process.env.ENVIRONMENT,
       LOG_LEVEL: process.env.LOG_LEVEL,
       // RPC
-      RPC_URL_LIST_MAINNET: process.env.RPC_URL_LIST_MAINNET ?? 'https://api.testnet.solana.com',
-      RPC_URL_LIST_NILE_TESTNET: process.env.RPC_URL_LIST_NILE_TESTNET ?? 'https://api.testnet.solana.com',
-      RPC_URL_LIST_SHASTA_TESTNET: process.env.RPC_URL_LIST_SHASTA_TESTNET ?? 'https://api.testnet.solana.com',
+      RPC_URL_LIST_MAINNET: process.env.RPC_URL_LIST_MAINNET,
+      RPC_URL_LIST_NILE_TESTNET: process.env.RPC_URL_LIST_NILE_TESTNET,
+      RPC_URL_LIST_SHASTA_TESTNET: process.env.RPC_URL_LIST_SHASTA_TESTNET,
       // Block explorer
       EXPLORER_MAINNET_BASE_URL: process.env.EXPLORER_MAINNET_BASE_URL,
       EXPLORER_NILE_BASE_URL: process.env.EXPLORER_NILE_BASE_URL,
@@ -135,13 +135,13 @@ export class ConfigProvider {
       NFT_API_BASE_URL: process.env.NFT_API_BASE_URL,
       LOCAL_API_BASE_URL: process.env.LOCAL_API_BASE_URL,
       // // TronGrid API
-      TRONGRID_BASE_URL_MAINNET: process.env.TRONGRID_BASE_URL_MAINNET ?? 'https://api.testnet.solana.com',
-      TRONGRID_BASE_URL_NILE: process.env.TRONGRID_BASE_URL_NILE ?? 'https://api.testnet.solana.com',
-      TRONGRID_BASE_URL_SHASTA: process.env.TRONGRID_BASE_URL_SHASTA ?? 'https://api.testnet.solana.com',
+      TRONGRID_BASE_URL_MAINNET: process.env.TRONGRID_BASE_URL_MAINNET,
+      TRONGRID_BASE_URL_NILE: process.env.TRONGRID_BASE_URL_NILE,
+      TRONGRID_BASE_URL_SHASTA: process.env.TRONGRID_BASE_URL_SHASTA,
       // // Tron HTTP API URLs
-      TRON_HTTP_BASE_URL_MAINNET: process.env.TRON_HTTP_BASE_URL_MAINNET ?? 'https://api.testnet.solana.com',
-      TRON_HTTP_BASE_URL_NILE: process.env.TRON_HTTP_BASE_URL_NILE ?? 'https://api.testnet.solana.com',
-      TRON_HTTP_BASE_URL_SHASTA: process.env.TRON_HTTP_BASE_URL_SHASTA ?? 'https://api.testnet.solana.com',
+      TRON_HTTP_BASE_URL_MAINNET: process.env.TRON_HTTP_BASE_URL_MAINNET,
+      TRON_HTTP_BASE_URL_NILE: process.env.TRON_HTTP_BASE_URL_NILE,
+      TRON_HTTP_BASE_URL_SHASTA: process.env.TRON_HTTP_BASE_URL_SHASTA,
     };
 
     // Validate and parse them before returning
