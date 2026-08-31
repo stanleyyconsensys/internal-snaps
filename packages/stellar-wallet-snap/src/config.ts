@@ -92,7 +92,7 @@ export const LogLevelStruct = coerce(
 /**
  * A struct for validating the network config map.
  */
-const NetworkConfigMapStruct = record(
+const networkConfigMapStruct = record(
   KnownCaip2ChainIdStruct,
   NetworkConfigStruct,
 );
@@ -103,7 +103,7 @@ const NetworkConfigMapStruct = record(
 const ConfigStruct = object({
   environment: enums(Object.values(Environment)),
   logLevel: LogLevelStruct,
-  networks: NetworkConfigMapStruct,
+  networks: networkConfigMapStruct,
   selectedNetwork: selectedNetworkStruct,
   transaction: object({
     timeout: parseIntegerStruct(100, 180),
